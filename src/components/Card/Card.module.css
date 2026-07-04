@@ -1,0 +1,98 @@
+.root {
+  background: var(--ui-card-bg, #2a2a2a);
+  color: var(--ui-text, white);
+
+  border: 1px solid rgba(255, 255, 255, .08);
+
+  overflow: hidden;
+}
+
+/* Radius */
+
+.none {
+  border-radius: 0;
+}
+
+.sm {
+  border-radius: 8px;
+}
+
+.md {
+  border-radius: 14px;
+}
+
+.lg {
+  border-radius: 20px;
+}
+
+.xl {
+  border-radius: 28px;
+}
+
+/* Shadow */
+
+.shadowNone {
+  box-shadow: none;
+}
+
+.shadowSm {
+  box-shadow: 0 5px 15px rgba(0,0,0,.15);
+}
+
+.shadowMd {
+  box-shadow: 0 15px 35px rgba(0,0,0,.25);
+}
+
+.shadowLg {
+  box-shadow: 0 25px 60px rgba(0,0,0,.35);
+}
+
+/* Header */
+
+.header {
+  padding: 20px;
+
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.title {
+  font-size: 18px;
+
+  font-weight: 600;
+}
+
+.subtitle {
+  margin-top: 6px;
+
+  font-size: 14px;
+
+  opacity: .7;
+}
+
+/* Align */
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+/* Body */
+
+.body {
+  padding: 20px;
+}
+
+/* Footer */
+
+.footer {
+  padding: 20px;
+
+  border-top: 1px solid rgba(255,255,255,.08);
+}
