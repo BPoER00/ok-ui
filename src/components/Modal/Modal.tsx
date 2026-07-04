@@ -38,7 +38,7 @@ export const Modal = ({
 
   className,
   classNames,
-  styles: customStyles,
+  styleOverrides,
 
   ...props
 }: ModalProps) => {
@@ -47,24 +47,25 @@ export const Modal = ({
   return (
     <div
       className={clsx(styles.overlay, classNames?.overlay)}
-      style={customStyles?.overlay}
+      style={styleOverrides?.overlay}
       onClick={onClose}
     >
       <div
+        {...props}
         className={clsx(
           styles.modal,
           sizeMap[size],
           className,
           classNames?.modal
         )}
-        style={customStyles?.modal}
+        style={styleOverrides?.modal}
         onClick={(e) => e.stopPropagation()}
       >
         {/* HEADER */}
         {(title || subtitle || closable) && (
           <header
             className={clsx(styles.header, classNames?.header)}
-            style={customStyles?.header}
+            style={styleOverrides?.header}
           >
             {title && (
               <div

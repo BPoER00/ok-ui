@@ -29,7 +29,7 @@ export interface ModalClassNames {
   closeButton?: string;
 }
 
-export interface ModalStyles {
+export interface ModalStyleOverrides {
   overlay?: CSSProperties;
   modal?: CSSProperties;
   header?: CSSProperties;
@@ -61,5 +61,7 @@ export interface ModalProps
   };
 
   classNames?: ModalClassNames;
-  styles?: ModalStyles;
+
+  // ✅ FIX: antes era styles, ahora consistente con el componente
+  styleOverrides?: ModalStyleOverrides;
 }

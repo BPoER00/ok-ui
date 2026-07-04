@@ -39,7 +39,7 @@ export interface CardStyles {
 }
 
 export interface CardProps
-  extends HTMLAttributes<HTMLDivElement> {
+  extends Omit<HTMLAttributes<HTMLDivElement>, "title"> {
   title?: ReactNode;
 
   subtitle?: ReactNode;
