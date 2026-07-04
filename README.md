@@ -19,8 +19,3 @@ This project is focused on building reusable UI components with a strong emphasi
 - Bun / npm / yarn / pnpm compatible
 
 ---
-
-## 📦 Installation
-
-```bash
-npm install your-ui-library
