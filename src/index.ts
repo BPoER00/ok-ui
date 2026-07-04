@@ -1,5 +1,3 @@
-export * from "./components/Button";
-
-export * from "./components/Modal";
-
-export * from "./components/Card";
+export { Button } from "./components/Button";
+export { Modal } from "./components/Modal";
+export { Card } from "./components/Card";
